@@ -1,0 +1,122 @@
+/* Add styling for HomePage */
+header {
+    /* display: flex; */
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    /* background-color: #565656; */
+  }
+
+.headerLine1{
+  display: flex;
+  justify-content: space-between;
+}
+
+.headerLine2{
+  align-items: center;
+  padding: 10px;
+  justify-self:center;
+}
+  
+body{
+  background-color: #FAF0E6;
+}
+.logo{
+  height: 190px;
+  width: 190px;
+}
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+  }
+  
+  nav ul li {
+    font-weight: bold;
+  }
+  
+  .switch-options {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .switch-options button {
+    cursor: pointer;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+  }
+  
+  .switch-options button.active {
+    background-color: #eee;
+  }
+  
+  .welcome-message {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 24px;
+  }
+  
+
+
+  .toggle-slider {
+    position: relative;
+    width: 360px;
+    height: 66px;
+    margin-right: 45%;
+  }
+  
+  .slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #FDDA16;
+    border-radius: 34px;
+    cursor: pointer;
+    transition: 0.4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: '';
+    height: 61px;
+    width: 188px;
+    left: 2px;
+    bottom: 2px;
+    background-color: #9B0909;
+    border-radius: 30px;
+    transition: 0.4s;
+  }
+  
+  input[type='checkbox'] {
+    display: none;
+  }
+  
+  input[type='checkbox']:checked + .slider {
+    background-color: #FDDA16;
+  }
+  
+  input[type='checkbox']:checked + .slider:before {
+    transform: translateX(166px);
+  }
+
+  /* Add styling for HomePage */
+
+.slider-label {
+  position: absolute;
+  top: 50%;
+  padding: 5px 10px;
+  color: #fff; /* Default color for inactive state */
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 2;
+  transition: 0.4s;
+}
+
+.slider-label.active {
+  color: #000; /* Color for active state */
+}
+
+/* ... (rest of the styles) */
