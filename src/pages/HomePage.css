@@ -17,45 +17,47 @@ header {
   padding: 10px;
   justify-self: center;
 }
-
-body {
-  background-color: #faf0e6;
+  
+body{
+  background-color: #FAF0E6;
 }
 .logo {
   height: 190px;
   width: 190px;
 }
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 10px;
-}
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+  }
+  
+  nav ul li {
+    font-weight: bold;
+  }
+  
+  .switch-options {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .switch-options button {
+    cursor: pointer;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+  }
+  
+  .switch-options button.active {
+    background-color: #eee;
+  }
+  
+  .welcome-message {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 24px;
+  }
+  
 
-nav ul li {
-  font-weight: bold;
-}
-
-.switch-options {
-  display: flex;
-  gap: 10px;
-}
-
-.switch-options button {
-  cursor: pointer;
-  padding: 5px 10px;
-  border: 1px solid #ccc;
-  background-color: #fff;
-}
-
-.switch-options button.active {
-  background-color: #eee;
-}
-
-.welcome-message {
-  text-align: center;
-  margin-top: 20px;
-  font-size: 24px;
-}
 
 .toggle-slider {
   position: relative;
@@ -137,13 +139,13 @@ input[type="checkbox"] {
   transform: translateX(166px);
 } */
 
-/* Add styling for HomePage */
+  /* Add styling for HomePage */
 
 .slider-label {
   position: absolute;
   top: 50%;
   padding: 5px 10px;
-  color: #fff;
+  color: #fff; /* Default color for inactive state */
   font-weight: bold;
   cursor: pointer;
   z-index: 2;
@@ -151,7 +153,7 @@ input[type="checkbox"] {
 }
 
 .slider-label.active {
-  color: #000;
+  color: #000; /* Color for active state */
 }
 
 /* ... (rest of the styles) */

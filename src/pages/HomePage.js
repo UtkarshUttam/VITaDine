@@ -19,6 +19,7 @@ const HomePage = () => {
 
   return (
     <div>
+      <div className="box2">
       <header>
         <div className="headerLine1">
           <div className="logoDiv">
@@ -58,13 +59,23 @@ const HomePage = () => {
         </div>
       </header>
       <main>
+
         <h1>Welcome to {checked ? "Underbelly" : "Mayuri"}!</h1>
+
+        <div className="welcome">
+        <h1>Welcome to {checked ? 'Underbelly' : 'Mayuri'}!</h1>
+        {/* <div className="box2">
+        <h3 style={{ color: 'white' }}>Box 2</h3>
+      </div> */}
+        </div>
+
         <Routes>
           <Route path="/" element={<Outlet />} />
           <Route path="/mayuri-menu" element={<MayuriPage />} />
           <Route path="/underbelly-menu" element={<UnderbellyPage />} />
         </Routes>
       </main>
+      </div>
     </div>
   );
 };
